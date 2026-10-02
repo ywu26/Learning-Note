@@ -1,0 +1,36 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[margin=0.85in]{geometry}\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\title{Electromagnetism Learning Plan}\author{Learning-Note}\date{2 October 2026}
+\begin{document}\maketitle
+\section*{Learning method}
+Build physical meaning before manipulating formulas. For each concept, identify what can be observed or measured, state the mathematical definition, and distinguish it from a physical law or theorem. Stay within the requested concept and advance only after the learner confirms understanding. A planned subject is not a completed lesson.
+
+\section*{Current state}
+\begin{itemize}
+\item Flux, divergence, and curl: the learner has confirmed understanding of their definitions and their general purpose. The first note records physical interpretations, applications, and related laws.
+\item Electric and magnetic fields: the supplied side-chat summary has been checked and incorporated with assumptions about probes, magnetic dipoles, spin, and energy.
+\item Impedance and voltage/current reflection formulas: previously discussed and reported mathematically understood. Their physical interpretation still needs development.
+\item Next requested subject: Maxwell's equations. The learner's motivating question is why an ideal short reverses reflected voltage while incident and reflected currents add.
+\end{itemize}
+
+\newpage
+\section*{Proposed sequence}
+\begin{enumerate}
+\item \textbf{Maxwell's equations, one law at a time.} Start with the physical observation each law describes. Relate its integral and differential forms using the already understood operations. Explain total versus free charge/current and when $\mathbf D$ and $\mathbf H$ are useful.
+\item \textbf{Displacement current and charge conservation.} Examine a charging capacitor, compare surfaces sharing a boundary, and explain why the time-dependent electric-field term is needed.
+\item \textbf{Fields at conductors and energy flow.} Introduce surface charge, surface current, ideal-conductor boundary conditions, the Poynting vector, and field energy with explicit assumptions.
+\item \textbf{Transmission lines as guided fields.} Connect a TEM line's transverse electric field to voltage, magnetic circulation to current, and field storage to distributed capacitance and inductance.
+\item \textbf{Reflection at an ideal short and open.} Fix current and voltage reference directions. Explain how the conductor responds, how fields superpose, and how backward energy propagation can coexist with a reflected current of the same sign. Distinguish incident, reflected, and total quantities.
+\item \textbf{Apply the picture to the AN720 antenna.} First identify the exact model, feed, conductor connections, substrate, and relevant geometry using verified documentation and photographs. Then connect current/charge distributions, resonance, matching, polarization, and radiation to the confirmed structure.
+\end{enumerate}
+
+\section*{Repository organization and updates}
+Each subject has its own folder. The current folder is \texttt{Electromagnetism-Foundations/}, containing \texttt{main.tex} and \texttt{main.pdf}. Repository documents are \texttt{Documents/plan.tex}, \texttt{Documents/plan.pdf}, \texttt{Documents/changes.tex}, and \texttt{Documents/changes.pdf}.
+
+For the next lesson, extend the foundations note when material directly develops it; create a separate topic folder when the subject merits an independent note. Append a dated change entry and regenerate affected PDFs. Use stable filenames without release numbers or duplicate revision folders.
+
+Only \texttt{.tex} and \texttt{.pdf} files are intended for Git. Auxiliary outputs and unrelated files are excluded using a repository-local Git exclude rule. Git configuration is not part of an Overleaf upload. Each document uses ordinary pdfLaTeX packages and compiles independently; no external bibliography is needed.
+\end{document}

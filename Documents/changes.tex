@@ -1,0 +1,35 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[margin=0.85in]{geometry}\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\title{Learning Note: Editing Record}\author{Learning-Note}\date{2 October 2026}
+\begin{document}
+\begin{center}
+{\Large\bfseries Learning Note: Editing Record}\par
+2 October 2026
+\end{center}
+\section*{Purpose}
+Record substantive changes between editing sessions. This is a dated human-readable record, without numbered releases, approval procedures, or duplicate versions. Future edits append a new dated entry and regenerate this PDF.
+
+\section*{2 October 2026 --- Initial note}
+\textbf{Created:} \texttt{Electromagnetism-Foundations/main.tex} and its PDF, plus independent learning-plan and editing-record documents in \texttt{Documents/}.
+
+\textbf{Content:} Operational definitions and experimental access to electric and magnetic fields; magnetic moments, electron spin, stationary magnets, and energy; definitions of flux, divergence, and curl; fluid, heat, current, and electromagnetic applications; illustrative calculations; and a limited map of related physical laws.
+
+\textbf{Clarifications from the supplied discussion:}
+\begin{itemize}
+\item Electric field is external force per signed test charge in a specified frame, with negligible probe disturbance.
+\item The magnetic force is perpendicular to velocity and field; the field need not be perpendicular to velocity. One velocity direction cannot determine every field component.
+\item Spin is intrinsic angular momentum, not literal mechanical rotation. Atomic beam splitting is distinguished from a free-electron experiment.
+\item Fixed-dipole torque, force, and interaction-energy formulas state their approximation and distinguish uniform from nonuniform external fields.
+\item Static magnetic fields and intrinsic spin do not require continuous power; resistive coils have losses.
+\item Field flux is not necessarily material transport. Zero divergence does not mean zero field. Circular field lines do not necessarily mean nonzero local curl.
+\item Definitions and mathematical theorems are distinguished from physical laws. The history is not reduced to a universal definitions-first sequence.
+\end{itemize}
+
+\textbf{Build and organization:} Self-contained pdfLaTeX source with embedded references and diagram, suitable for Overleaf. Stable filenames, one topic folder, and only TeX/PDF document files intended for Git. Build artifacts are excluded locally.
+
+\textbf{Validation:} Compiled locally with pdfLaTeX, resolved citations on a second pass, and inspected rendered PDF pages. Recompilation does not require external images, BibTeX, or shell escape.
+
+\textbf{Next:} Begin Maxwell's equations only when requested, following the learning plan. Wave propagation, reflection, and detailed AN720 analysis remain future lessons.
+\end{document}
