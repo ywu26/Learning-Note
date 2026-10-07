@@ -3,7 +3,7 @@
 \usepackage[margin=0.85in]{geometry}\usepackage{amsmath,amssymb}
 \usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
-\title{Electromagnetism Learning Plan}\author{Learning-Note}\date{2 October 2026}
+\title{Electromagnetism Learning Plan}\author{Learning-Note}\date{7 October 2026}
 \begin{document}\maketitle
 \section*{Learning method}
 Build physical meaning before manipulating formulas. For each concept, identify what can be observed or measured, state the mathematical definition, and distinguish it from a physical law or theorem. Stay within the requested concept and advance only after the learner confirms understanding. A planned subject is not a completed lesson.
@@ -13,13 +13,15 @@ Build physical meaning before manipulating formulas. For each concept, identify 
 \item Flux, divergence, and curl: the learner has confirmed understanding of their definitions and their general purpose. The first note records physical interpretations, applications, and related laws.
 \item Electric and magnetic fields: the supplied side-chat summary has been checked and incorporated with assumptions about probes, magnetic dipoles, spin, and energy.
 \item Impedance and voltage/current reflection formulas: previously discussed and reported mathematically understood. Their physical interpretation still needs development.
-\item Next requested subject: Maxwell's equations. The learner's motivating question is why an ideal short reverses reflected voltage while incident and reflected currents add.
+\item Laws and experiments: a separate timeline note now records Coulomb, steady-current magnetism, Gauss, Faraday, Lenz, Stokes, Maxwell's extension, and the force law. It includes the missing EMF and independent-measurement explanations. Recording a lesson does not establish confirmed understanding.
+\item \textbf{Primary learning direction, from 7 October 2026:} Follow Edward M. Purcell and David J. Morin, \emph{Electricity and Magnetism}, 3rd edition (2013), as the main sequence. The existing notes support the book-led study; the next subjects follow the book rather than a direct jump to Maxwell's equations.
+\item \textbf{Reading checkpoint:} Chapter 1, \emph{Electrostatics: charges and fields}. Recent discussion covers Coulomb's law and superposition, Gauss's law, spherical/line/sheet charge distributions, forces on a charge layer, and field energy. Problem 1.33 was worked through to derive the two-charge interaction energy from the field integral. Discussion and a worked solution do not imply confirmed mastery.
 \end{itemize}
 
 \newpage
 \section*{Proposed sequence}
 \begin{enumerate}
-\item \textbf{Maxwell's equations, one law at a time.} Start with the physical observation each law describes. Relate its integral and differential forms using the already understood operations. Explain total versus free charge/current and when $\mathbf D$ and $\mathbf H$ are useful.
+\item \textbf{Book-led foundations through Maxwell's equations.} Continue Chapter 1, then study potential and conductors in Chapters 2--3. Work selected problems to check derivations. Follow the book toward magnetism, induction, Maxwell's equations, and waves, explaining experimental assumptions and mathematical steps before advancing.
 \item \textbf{Displacement current and charge conservation.} Examine a charging capacitor, compare surfaces sharing a boundary, and explain why the time-dependent electric-field term is needed.
 \item \textbf{Fields at conductors and energy flow.} Introduce surface charge, surface current, ideal-conductor boundary conditions, the Poynting vector, and field energy with explicit assumptions.
 \item \textbf{Transmission lines as guided fields.} Connect a TEM line's transverse electric field to voltage, magnetic circulation to current, and field storage to distributed capacitance and inductance.
@@ -28,9 +30,34 @@ Build physical meaning before manipulating formulas. For each concept, identify 
 \end{enumerate}
 
 \section*{Repository organization and updates}
-Each subject has its own folder. The current folder is \texttt{Electromagnetism-Foundations/}, containing \texttt{main.tex} and \texttt{main.pdf}. Repository documents are \texttt{Documents/plan.tex}, \texttt{Documents/plan.pdf}, \texttt{Documents/changes.tex}, and \texttt{Documents/changes.pdf}.
+Each subject has its own folder. The current folder is \path{Electromagnetism-Foundations/}, containing two independent notes:
+\begin{itemize}
+\item \path{fields-and-vector-calculus.tex} and its PDF.
+\item \path{laws-experiments-and-timeline.tex} and its PDF.
+\end{itemize}
+Repository documents are the source/PDF pairs for \path{Documents/plan.tex} and \path{Documents/changes.tex}.
 
 For the next lesson, extend the foundations note when material directly develops it; create a separate topic folder when the subject merits an independent note. Append a dated change entry and regenerate affected PDFs. Use stable filenames without release numbers or duplicate revision folders.
 
 Only \texttt{.tex} and \texttt{.pdf} files are intended for Git. Auxiliary outputs and unrelated files are excluded using a repository-local Git exclude rule. Git configuration is not part of an Overleaf upload. Each document uses ordinary pdfLaTeX packages and compiles independently; no external bibliography is needed.
+
+\newpage
+\section*{Suggested books and reading path}
+These are recommendations based on the learner's preference for experimental and physical meaning before algebra. Coverage is checked against publisher information; suitability and sequence are editorial judgments.
+
+\begin{enumerate}
+\item \textbf{Current primary text: Purcell and Morin, Electricity and Magnetism, 3rd edition (2013).} Reading began with Chapter 1: charges, fields, flux, and Gauss. Chapters 2--3 develop potential and conductors; Chapters 5--6 cover moving charges and magnetism; Chapter 7 covers induction; Chapter 9 covers Maxwell and waves. Chapters 10--11 address fields in matter and magnetic moments. This text supplies the physical foundations for later transmission-line and antenna study.\\
+\href{https://www.cambridge.org/za/titles/electricity-and-magnetism-3rd-edition}{Cambridge publisher page}.
+\item \textbf{For systematic mathematical derivations: Griffiths, Introduction to Electrodynamics, 5th edition.} Chapter 1 covers vector analysis; Chapters 2--7 develop electrostatics through electrodynamics; later chapters cover conservation, waves, fields, and radiation. Use as a rigorous companion when ready for more calculation. It is a physics foundation rather than an RF hardware design text.\\
+\href{https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/FD23E188E2BDCDB40199CFE3386EC08F}{Cambridge publisher page}.
+\item \textbf{Then connect fields to wireless hardware: Pozar, Microwave Engineering, 4th edition.} Prioritize Chapters 1--3 (fields, transmission lines, waveguides), Chapter 4 (network analysis), and Chapter 5 (matching). It directly supports the planned impedance/reflection and RF work, but its initial EM review is not a substitute for the foundational explanations requested here.\\
+\href{https://bcs.wiley.com/he-bcs/Books?action=contents&bcsId=6874&itemId=0470631554}{Wiley companion contents}.
+\item \textbf{For antenna analysis and design: Balanis, Antenna Theory: Analysis and Design, 4th edition.} Use after field propagation and transmission-line basics. Its radiation, antenna parameters, impedance, polarization, and antenna-geometry treatment is relevant to later AN720 analysis. Identify the antenna's actual structure before selecting a model.\\
+\href{https://bcs.wiley.com/he-bcs/Books?action=contents&bcsId=9777&itemId=1118642066}{Wiley antenna-text companion site}.
+\end{enumerate}
+
+\textbf{Free supplementary reading:} The Feynman Lectures, Volume II, especially Chapters 2--3 for vector fields and Chapters 16--18 for induction and Maxwell. They are useful for physical explanations, alongside a structured textbook and exercises.\\
+\url{https://www.feynmanlectures.caltech.edu/II_toc.html}
+
+A practical sequence is Purcell--Morin for understanding, Pozar for guided fields and RF, then Balanis for antennas. Griffiths can supply more detailed mathematical practice in parallel. No single text replaces careful distinction between a definition, a mathematical identity, and an experimentally supported law.
 \end{document}

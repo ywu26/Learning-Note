@@ -1,12 +1,12 @@
 \documentclass[11pt,letterpaper]{article}
 \usepackage[T1]{fontenc}\usepackage{lmodern}
-\usepackage[margin=0.85in]{geometry}\usepackage[hidelinks]{hyperref}
+\usepackage[margin=0.85in]{geometry}\usepackage{amsmath,amssymb}\usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
-\title{Learning Note: Editing Record}\author{Learning-Note}\date{2 October 2026}
+\title{Learning Note: Editing Record}\author{Learning-Note}\date{7 October 2026}
 \begin{document}
 \begin{center}
 {\Large\bfseries Learning Note: Editing Record}\par
-2 October 2026
+Updated 7 October 2026
 \end{center}
 \section*{Purpose}
 Record substantive changes between editing sessions. This is a dated human-readable record, without numbered releases, approval procedures, or duplicate versions. Future edits append a new dated entry and regenerate this PDF.
@@ -32,4 +32,31 @@ Record substantive changes between editing sessions. This is a dated human-reada
 \textbf{Validation:} Compiled locally with pdfLaTeX, resolved citations on a second pass, and inspected rendered PDF pages. Recompilation does not require external images, BibTeX, or shell escape.
 
 \textbf{Next:} Begin Maxwell's equations only when requested, following the learning plan. Wave propagation, reflection, and detailed AN720 analysis remain future lessons.
+
+\newpage
+\section*{6 October 2026 --- Laws, experiments, and timeline}
+\textbf{New note:} Added \texttt{Electromagnetism-Foundations/}\\
+\path{laws-experiments-and-timeline.tex} and its PDF as an independent lesson alongside the original note.
+
+\textbf{Content:} Historical organization of Coulomb, steady-current magnetism, Gauss's law, Faraday, Lenz, Stokes, Maxwell's extension, and the combined force law. Definitions, experimentally established laws, mathematical theorems, and derived special cases are identified separately.
+
+\textbf{Clarifications:} Expanded the independent electrical and magnetic measurements behind Faraday's equality. Explained EMF's voltage units, the tangential directions in $\mathbf E\cdot d\boldsymbol\ell$, boundary versus spanning surface, orientation and signs, and how changing magnetic flux relates to electric circulation. The stationary-loop restriction, total versus imposed magnetic field, receiving-circuit resistance/inductance, and proof versus experimental evidence are explicit.
+
+\textbf{Rename:} Renamed the original \texttt{main.tex/main.pdf} pair to \path{fields-and-vector-calculus.tex} and its PDF; retained its content and updated compilation instructions and companion-note reference.
+
+\textbf{Plan:} Recorded the new lesson without treating it as confirmed mastery. Added a suggested reading path from physical foundations through mathematical electrodynamics, transmission lines/RF, and antenna design.
+
+\textbf{Build:} Both topic notes remain self-contained pdfLaTeX sources with embedded bibliography and diagrams. Only TeX/PDF files belong in Git; auxiliary files are generated outside the repository. PDF validation is performed by local compilation and rendered-page inspection.
+
+
+\newpage
+\section*{7 October 2026 --- Shift to book-led study}
+\textbf{Primary text:} The learning sequence now follows Edward M. Purcell and David J. Morin, \emph{Electricity and Magnetism}, 3rd edition (2013). The two existing foundations notes serve as references alongside the book.
+
+\textbf{Reading checkpoint:} Chapter 1, \emph{Electrostatics: charges and fields}. Discussion has covered Coulomb's law, superposition, Gauss's law and its geometric derivation, fields of spherical/line/sheet charge distributions, forces on surface charge, and field energy. Problem 1.33 was worked through to verify the interaction-energy term for two charges. These entries record subjects discussed, not a claim that every subject has been mastered.
+
+\textbf{Plan:} Replaced the immediate Maxwell-first step with book-led study beginning with electrostatics, followed by potential and conductors. Retained the later goals of physical transmission-line reflection and the AN720 antenna. Physical interpretation, explicit assumptions, and complete derivations remain the learning priorities; advancement requires the learner's confirmation.
+
+\textbf{Documents:} Updated \path{Documents/plan.tex} and this editing record, and regenerated their PDFs with local pdfLaTeX. This editing session also commits the pending foundations-note rename and the separate laws-and-experiments timeline recorded on 6 October.
+
 \end{document}
